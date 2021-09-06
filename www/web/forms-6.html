@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>桌球國手運動傷害評估系統｜第六頁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/sias_ntus.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container form-wrap">
+        <form>
+            <div class="form-section">
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <h3>七、FMS (Functional movement screen score sheet 功能性動作檢測評分表)</h3>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <div class="input-group w-50">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">慣用手／腳：(左/右）</span>
+                                <select class="form-control" id="dominant">
+                                    <option value="0">...</option>
+                                    <option value="1">右</option>
+                                    <option value="2">左</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="normal-hr-1" />
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label><h5>A. FMS 檢測 (功能性動作檢測評分表)</h5></label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Deep squat (深蹲)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="squat-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="squat-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="squat-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="squat" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Hurdle step (跨欄)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="hurdle-r-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="hurdle-r-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="hurdle-r-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="hurdle-l-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="hurdle-l-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="hurdle-l-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="hurdle" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Inline lunge (直線弓箭步)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lunge-r-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="lunge-r-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="lunge-r-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lunge-l-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="lunge-l-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="lunge-l-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="lunge" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Shoulder mobility (肩關節活動度)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="mobility-r-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="mobility-r-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="mobility-r-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="mobility-l-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="mobility-l-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="mobility-l-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="mobility" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Active straight-leg raise (單腿打直高抬)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="slr-r-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="slr-r-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="slr-r-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="slr-l-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="slr-l-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="slr-l-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="slr" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Trunk stability pushup (俯臥撐地- 軀幹穩定度)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="pushup-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="pushup-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="pushup-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="pushup" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <div class="col-md-12 mb-3">
+                            測試項目：
+                        </div>
+                        <div class="col-md-12 mb-3">Rotary stability (核心旋轉穩定度)</b>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>原始分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="stability-r-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="stability-r-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="stability-r-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="stability-l-1" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="stability-l-2" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                                <input type="number" class="form-control" id="stability-l-3" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <span>最後分數</span>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="stability" oninput="if(value.length > 1)value = value.slice(0, 1)" placeholder="範圍:0~3"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <lable>總分</lable>
+                    </div>
+                    <div class="col-md-9 mb-3">
+                        <div class="col-md-12 mb-3">
+                            <input type="number" class="form-control" id="fms-total" placeholder="總分=21，<14高運動傷害風險"/>
+                        </div>
+                    </div>
+                </div>
+                <hr class="normal-hr-1" />
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label><h5>B. 注意事項：</h5></label>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <ol>
+                            <li>原始分數：</li>
+                            <ul>
+                                <li>分別記左右側分數（五項測試）</li>
+                                <li>每測試項目皆進行三次估測</li>
+                                <li>若受測者感覺疼痛，則分數為０</li>
+                            </ul>
+                            <li>總分：以最低的原始分數為最後檢測分數</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <hr class="normal-hr-1" />
+                <hr class="normal-hr-2" />
+            </div>
+            <div class="pagination-wrap">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link prev" href="#">上一頁</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link next" href="#">下一頁</a>
+                    </li>
+                    <li class="page-item">
+                        <button type="button" class="btn btn-warning">儲存本頁</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
+    <footer class="main-footer text-center">
+        <strong>Copyright &copy; 2019
+                <a href="https://www.ntupes.edu.tw/cht/index.php">國立臺灣體育運動大學</a>. </strong
+            >All rights reserved.
+        </footer>
+    </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="assets/js/sias_ntus.default.js?v=102701"></script>
+    <script src="assets/js/sias_ntus.forms.6.js?v=102701"></script>
+</html>

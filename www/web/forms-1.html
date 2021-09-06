@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>桌球國手運動傷害評估系統｜第一頁</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="assets/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/sias_ntus.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container form-wrap">
+            <div class="loading-mask" style="display: none;"></div>
+            <form>
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-8 mb-3">
+                            <h3>基本資料</h3>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h5>測驗建立日期： <span id="created-at"></span></h5>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>受測者姓名：</label>
+                            <input type="text" class="form-control" id="name" disabled />
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label>性別：</label>
+                            <select class="form-control" id="gender">
+                                <option value="0">...</option>
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label>身高：</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="height" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">公分</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>出生日期</label>
+                            <div class="form-group">
+                                <div class="input-group date" id="day-of-birth">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label>肩高(拍照)：</label>
+                            <div class="checkbox">
+                                <label style="font-size: 1.5em">
+                                    <input type="checkbox" id="img-shldrlvl" />完成
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <h3>一、身體組成</h3>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>體重：</label>
+                            <input type="number" class="form-control" id="weight" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>ＢＭＩ：</label>
+                            <input type="number" class="form-control" id="bmi" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>體脂肪：</label>
+                            <input type="number" class="form-control" id="bfp" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>筋肉：</label>
+                            <input type="number" class="form-control" id="muscle" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>骨量：</label>
+                            <input type="number" class="form-control" id="bone" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>內臟脂肪：</label>
+                            <input type="number" class="form-control" id="vfp" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>基礎代謝：</label>
+                            <input type="number" class="form-control" id="bmr" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>身體水分：</label>
+                            <input type="number" class="form-control" id="body-water" />
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <h3>二、長度測量</h3>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>大腿長 (轉子~股骨外髁)：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rt-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lt-len" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>小腿長（腓骨頭~外踝）：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rc-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lc-len" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>腿長 (髂前上棘~內踝)：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rl-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="ll-len" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>上臂長 (結節~肘外髁)：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rua-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lua-len" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>前臂長(橈骨頭~橈骨莖突)：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rfa-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lfa-len" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>手掌長 (腕部~中指指尖)：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rpmr-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lpmr-len" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>鎖骨長 (肩峰~鎖骨關節)：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rcvc-len" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lcvc-len" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>軀幹高 (坐姿下，屁股~頭頂)：</label>
+                            <input type="number" class="form-control" id="trunk-len" />
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <h3>三、維度</h3>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>肘關節上 5cm：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rae-5cm" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lae-5cm" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>肘關節下 5cm：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rbe-5cm" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lbe-5cm" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>膝關節上 5cm：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rak-5cm" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lak-5cm" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>膝關節下 5cm：</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｒ</span>
+                                </div>
+                                <input type="number" class="form-control" id="rbk-5cm" />
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ｌ</span>
+                                </div>
+                                <input type="number" class="form-control" id="lbk-5cm" />
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+                <div class="pagination-wrap">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link prev" href="#">上一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link next" href="#">下一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <button type="button" class="btn btn-warning">儲存本頁</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer class="main-footer text-center">
+            <strong>Copyright &copy; 2019 <a href="https://www.ntupes.edu.tw/cht/index.php">國立臺灣體育運動大學</a>. </strong>All rights reserved.
+        </footer>
+    </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="assets/js/sias_ntus.default.js?v=102701"></script>
+    <script src="assets/js/sias_ntus.forms.1.js?v=102701"></script>
+</html>

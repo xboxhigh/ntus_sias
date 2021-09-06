@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>桌球國手運動傷害評估系統｜第八頁</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="assets/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/sias_ntus.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container form-wrap">
+            <div class="loading-mask" style="display: none;"></div>
+            <form>
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <h3>九、額外資訊填寫</h3>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>受測者姓名：</label>
+                            <input type="text" class="form-control" id="name" disabled />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>學號/座號</label>
+                            <input type="text" class="form-control" id="student-id" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>身分證字號</label>
+                            <input type="text" class="form-control" id="id-card" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>出生日期</label>
+                            <div class="form-group">
+                                <div class="input-group date" id="date">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label>性別：</label>
+                            <select class="form-control" id="gender">
+                                <option value="0">...</option>
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label>學校類別：</label>
+                            <select class="form-control" id="schl">
+                                <option value="">...</option>
+                                <option value="JHS">國中</option>
+                                <option value="HS">高中</option>
+                                <option value="UN">大學</option>
+                                <option value="PRO">專項職業選手</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label>年級：</label>
+                            <select class="form-control" id="grade">
+                                <option value="0">...</option>
+                                <option value="7">一年級 </option>
+                                <option value="8">二年級</option>
+                                <option value="9">三年級</option>
+                                <option value="10">四年級</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>班級名稱</label>
+                            <input type="text" class="form-control" id="class" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>運動項目：</label>
+                            <select class="form-control" id="spt">
+                                <option value="">...</option>
+                                <option value="soccer">足球 </option>
+                                <option value="baseball">棒球</option>
+                                <option value="basketball">籃球</option>
+                                <option value="billiard">桌球</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>基礎體適能：</label>
+                            <input type="number" class="form-control" id="bpf" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>身高：</label>
+                            <input type="number" class="form-control" id="bpf-height" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>體重：</label>
+                            <input type="number" class="form-control" id="bpf-weight" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>坐姿體前彎：</label>
+                            <input type="number" class="form-control" id="bpf-forward-flex" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>立定跳遠：</label>
+                            <input type="number" class="form-control" id="bpf-jump" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>仰臥起坐：</label>
+                            <input type="number" class="form-control" id="bpf-sit-ups" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>心肺適能：</label>
+                            <input type="number" class="form-control" id="bpf-800-1600m" />
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>競技體適能：</label>
+                            <input type="number" class="form-control" id="spf" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>心肺耐力(spf_3minstep_15)：</label>
+                            <input type="number" class="form-control" id="spf-3minstep-15" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>心肺耐力(spf_3minstep_25)：</label>
+                            <input type="number" class="form-control" id="spf-3minstep-25" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>心肺耐力(spf_3minstep_35)：</label>
+                            <input type="number" class="form-control" id="spf-3minstep-35" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>心肺耐力(spf_3minstep_sum)：</label>
+                            <input type="number" class="form-control" id="spf-3minstep-sum" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>心肺耐力(spf_3minstep_index)：</label>
+                            <input type="number" class="form-control" id="spf-3minstep-index" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>速度(spf_v_10m)：</label>
+                            <input type="number" class="form-control" id="spf-v-10m" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>速度(spf_v_20m)：</label>
+                            <input type="number" class="form-control" id="spf-v-20m" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>爆發力：</label>
+                            <input type="number" class="form-control" id="spf-power" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>平衡(spf_balance_l_a)：</label>
+                            <input type="number" class="form-control" id="spf-balance-l-a" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>平衡(spf_balance_l_pm)：</label>
+                            <input type="number" class="form-control" id="spf-balance-l-pm" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>平衡(spf_balance_l_pl)：</label>
+                            <input type="number" class="form-control" id="spf-balance-l-pl" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>平衡(spf_balance_r_a)：</label>
+                            <input type="number" class="form-control" id="spf-balance-r-a" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>平衡(spf_balance_r_pm)：</label>
+                            <input type="number" class="form-control" id="spf-balance-r-pm" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>平衡(spf_balance_r_pl)：</label>
+                            <input type="number" class="form-control" id="spf-balance-r-pl" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>敏捷：</label>
+                            <input type="number" class="form-control" id="spf-agility" />
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_squat)：</label>
+                            <input type="number" class="form-control" id="fms-squat" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_hurdle_l)：</label>
+                            <input type="number" class="form-control" id="fms-hurdle-l" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_hurdle_r)：</label>
+                            <input type="number" class="form-control" id="fms-hurdle-r" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_lunge_l)：</label>
+                            <input type="number" class="form-control" id="fms-lunge-l" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_lunge_r)：</label>
+                            <input type="number" class="form-control" id="fms-lunge-r" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_mobility_l)：</label>
+                            <input type="number" class="form-control" id="fms-mobility-l" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_mobility_r)：</label>
+                            <input type="number" class="form-control" id="fms-mobility-r" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_slr_l)：</label>
+                            <input type="number" class="form-control" id="fms-slr-l" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_slr_r)：</label>
+                            <input type="number" class="form-control" id="fms-slr-r" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_pushup)：</label>
+                            <input type="number" class="form-control" id="fms-pushup" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_stability_l)：</label>
+                            <input type="number" class="form-control" id="fms-stability-l" />
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label>功能性動作檢測(FMS) (fms_stability_r)：</label>
+                            <input type="number" class="form-control" id="fms-stability-r" />
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>六個月是否受傷：</label>
+                            <div class="checkbox" id="is-injured-6month-check">
+                                <label style="font-size: 1em">
+                                    <input name="is-injured-6month" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    有
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="is-injured-6month" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    沒有
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>受傷側：</label>
+                            <div class="checkbox" id="injured-side-check">
+                                <label style="font-size: 1em">
+                                    <input name="injured-side" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    左
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-side" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    右
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="injured-side" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="injured-side-other" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>受傷部位：</label>
+                            <div class="checkbox" id="injured-part-check">
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    肩關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    肘關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    腕關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    手指關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    髖關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    膝關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    踝關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    腳趾關節
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    頸椎
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    胸椎
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    腰椎
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="injured-part" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="injured-part-other" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>診斷：</label>
+                            <div class="checkbox" id="diagnosis-check">
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    旋轉肌群損傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    滑液囊發炎
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    網球肘
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    高爾夫球肘
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    腕隧道症候群
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    手腕扭傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    關節炎
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    手指扭傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    髖關節扭傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    前十字韌帶損傷與重建
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    韌帶扭傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    足底筋膜炎
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    頸部扭傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    上背痛
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    挫傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    下背痛
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="diagnosis" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="diagnosis-other" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>發生狀況：</label>
+                            <div class="checkbox" id="event-check">
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    扭傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    拉傷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    瘀傷(挫傷)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    筋膜炎
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    骨折
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    脫位/ 半脫位
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    過度使用
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="event" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="event-other" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+                <div class="pagination-wrap">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item ">
+                            <a class="page-link prev" href="#">上一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link next" href="#">完成測驗</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer class="main-footer text-center">
+            <strong>Copyright &copy; 2019 <a href="https://www.ntupes.edu.tw/cht/index.php">國立臺灣體育運動大學</a>. </strong>All rights reserved.
+        </footer>
+    </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="assets/js/sias_ntus.default.js?v=102701"></script>
+    <script src="assets/js/sias_ntus.forms.8.js?v=102701"></script>
+</html>

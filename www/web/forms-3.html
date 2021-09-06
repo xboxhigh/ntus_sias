@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>桌球國手運動傷害評估系統｜第三頁</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="assets/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/sias_ntus.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container form-wrap">
+            <div class="loading-mask" style="display: none;"></div>
+            <form>
+                <label>
+                    <h5>
+                        14.以下問題評分方式採五點量表進行，計分方式為：非常不好(1)分、不好(2)分、普通(3)分、好(4)分、非常好(5)分
+                    </h5>
+                </label>
+                <div class="form-section">
+                    <label>
+                        <u><h5>防護功能</h5></u>
+                    </label>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                1.請問您認為鞋子的<u>抓地力</u>好不好?(起跑時是否容易打滑)
+                            </label>
+                            <div class="checkbox" id="results-area1-1">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                2.請問您認為鞋子的<u>地面摩擦力</u>好不好?(急剎時是否容易打滑)
+                            </label>
+                            <div class="checkbox" id="results-area1-2">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                3.請問您認為鞋子的<u>防滑性</u>好不好?(地面濕滑時是否容易打滑)
+                            </label>
+                            <div class="checkbox" id="results-area1-3">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                4.請問您認為鞋子的<u>左右移位的敏捷性</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area1-4">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                5.請問您認為鞋子是否<u>好穿</u>並<u>移動自如</u>?
+                            </label>
+                            <div class="checkbox" id="results-area1-5">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                6.請問您認為鞋子的<u>防扭傷功能</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area1-6">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                7.請問您認為鞋子的<u>避震效果</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area1-7">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                8.請問您認為鞋子的<u>減緩、分散衝擊力</u>的效能好不好?
+                            </label>
+                            <div class="checkbox" id="results-area1-8">
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area1" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <label>
+                        <u><h5>外觀</h5></u>
+                    </label>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                1.請問您是否因為<u>款式新穎</u>而選購此雙鞋子?
+                            </label>
+                            <div class="checkbox" id="results-area2-1">
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                2.請問您是否因為<u>款式流線型(剪裁縫紉度)</u>而選購此雙鞋子?
+                            </label>
+                            <div class="checkbox" id="results-area2-2">
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                3.請問您是否因為<u>外觀的配色</u>而選購此雙鞋子?
+                            </label>
+                            <div class="checkbox" id="results-area2-3">
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                4.請問您是否因為看到<u>廣告</u>而選購此雙鞋子?
+                            </label>
+                            <div class="checkbox" id="results-area2-4">
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                5.請問您是否因為<u>品牌</u>而選購此雙鞋子?
+                            </label>
+                            <div class="checkbox" id="results-area2-5">
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area2" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <label>
+                        <u><h5>材質</h5></u>
+                    </label>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                1.請問您認為鞋子的<u>透氣性</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area3-1">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                2.請問您認為<u>鞋墊的柔軟度</u>是否適中?
+                            </label>
+                            <div class="checkbox" id="results-area3-2">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                3.請問您認為鞋子的<u>抗磨損性</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area3-3">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                4.請問您認為鞋子的<u>耐穿性</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area3-4">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                5.請問您認為<u>鞋底的軟硬度</u>是否適中?
+                            </label>
+                            <div class="checkbox" id="results-area3-5">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                6.請問您認為<u>鞋底的厚度</u>是否適中?
+                            </label>
+                            <div class="checkbox" id="results-area3-6">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                7.請問您認為鞋子的<u>重量</u>是否適中?
+                            </label>
+                            <div class="checkbox" id="results-area3-7">
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area3" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="form-section">
+                    <label>
+                        <u><h5>使用功能</h5></u>
+                    </label>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                1.請問您認為穿著鞋子時對<u>技能發揮的影響</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area4-1">
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                2.請問您認為穿著鞋子時的<u>彈性</u>好不好?
+                            </label>
+                            <div class="checkbox" id="results-area4-2">
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                3.請問您認為鞋子的<u>鞋帶耐用性</u>(不易斷裂) 好不好?
+                            </label>
+                            <div class="checkbox" id="results-area4-3">
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                4.請問您認為鞋子的<u>散熱性</u>(不易產生濕熱) 好不好?
+                            </label>
+                            <div class="checkbox" id="results-area4-4">
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="1" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (1)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="2" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (2)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="3" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (3)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="4" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (4)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="results-area4" type="checkbox" value="5" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    (5)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+
+                <div class="pagination-wrap">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link prev" href="#">上一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link next" href="#">下一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <button type="button" class="btn btn-warning">儲存本頁</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer class="main-footer text-center">
+            <strong>Copyright &copy; 2019 <a href="https://www.ntupes.edu.tw/cht/index.php">國立臺灣體育運動大學</a>. </strong>All rights reserved.
+        </footer>
+    </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="assets/js/sias_ntus.default.js?v=102701"></script>
+    <script src="assets/js/sias_ntus.forms.3.js?v=102701"></script>
+</html>

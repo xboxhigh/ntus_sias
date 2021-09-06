@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>桌球國手運動傷害評估系統｜第四頁</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="assets/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/sias_ntus.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container form-wrap">
+            <div class="loading-mask" style="display: none;"></div>
+            <form>
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <h3>五、運動傷害病史與紀錄</h3>
+                        </div>
+                    </div>
+                    <h5>事件發生及病史表</h5>
+                    <hr class="normal-hr-1" />
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label
+                                ><h5>1.主觀感覺<font>（單選）：</font></h5></label
+                            >
+                            <div class="checkbox" id="injured-code-beg-check">
+                                <label style="font-size: 1em">
+                                    <input name="injured-code-beg" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    急性
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-code-beg" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    慢性
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label
+                                ><h5>2.部位<font>（單選）：</font></h5></label
+                            >
+                            <div class="checkbox" id="injured-code-mid-check">
+                                <ul>
+                                    <li>
+                                        <span>上肢：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            肩膀
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            上臂
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            手肘
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            前臂
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            手腕
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            手掌
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            手指
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>下肢：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            臀部
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            大腿前側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            大腿後側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            膝蓋前側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            膝蓋內側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            膝蓋外側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            小腿前側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            小腿後側
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            踝關節
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            腳底
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            腳跟
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            腳趾
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>軀幹：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            胸部
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            腹部
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            上背
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            中背
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            下背
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label style="font-size: 1em" class="form-group form-inline">
+                                            <input name="injured-code-mid" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            其他部位
+                                            <input type="text" class="form-control form-control-sm" id="injured-code-mid-other" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label
+                                ><h5>3.位置<font>（單選）：</font></h5></label
+                            >
+                            <div class="checkbox" id="injured-code-end-check">
+                                <label style="font-size: 1em">
+                                    <input name="injured-code-end" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    左
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-code-end" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    右
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="injured-code-end" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    雙側
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>4.診斷<font>（單選）：</font></h5>
+                            </label>
+                            <div class="checkbox" id="diagnosis-code-check">
+                                <ul>
+                                    <span>上肢：</span>
+                                    <li>
+                                        <span>肩關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            旋轉肌群損傷
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            滑液囊發炎
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>肘關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            網球肘
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            高爾夫球肘
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>腕關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            腕隧道症候群
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            手腕扭傷
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>手指關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            關節炎
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            手指扭傷
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <span>下肢：</span>
+                                    <li>
+                                        <span>髖關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            髖關節扭傷
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>膝關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            前十字韌帶損傷與重建
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>踝關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            韌帶扭傷
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>腳趾關節：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            足底筋膜炎
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <span>軀幹：</span>
+                                    <li>
+                                        <span>頸椎：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            頸部扭傷
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            上背痛
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>胸椎：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            挫傷
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>腰椎：</span>
+                                        <label style="font-size: 1em">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            下背痛
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label style="font-size: 1em" class="form-group form-inline">
+                                            <input name="diagnosis-code" type="checkbox" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            其他部位
+                                            <input type="text" class="form-control form-control-sm" id="diagnosis-code-other" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>5.運動防護人員處置狀況<font>（單選）</font>：</h5>
+                            </label>
+                            <div class="checkbox" id="at-plan-check">
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    運動按摩
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    拉筋
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    冷熱敷
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    衛教
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    貼紮防護
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    建議轉介醫院或診所
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    無
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="at-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="at-plan-other" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>6.醫療處置<font>（單選）</font>：</h5>
+                            </label>
+                            <div class="checkbox" id="treat-plan-check">
+                                <label style="font-size: 1em">
+                                    <input name="treat-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    醫院或診所接受復健或其它保守治療介入
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="treat-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    國術館或民俗療法
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="treat-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    無接受任何方式處理
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="treat-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    手術治療
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="treat-plan" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="treat-plan-other" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                    <hr class="normal-hr-2" />
+                </div>
+
+                <div class="pagination-wrap">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link prev" href="#">上一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link next" href="#">下一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <button type="button" class="btn btn-warning">儲存本頁</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer class="main-footer text-center">
+            <strong>Copyright &copy; 2019 <a href="https://www.ntupes.edu.tw/cht/index.php">國立臺灣體育運動大學</a>. </strong>All rights reserved.
+        </footer>
+    </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="assets/js/sias_ntus.default.js?v=102701"></script>
+    <script src="assets/js/sias_ntus.forms.4.js?v=102701"></script>
+</html>

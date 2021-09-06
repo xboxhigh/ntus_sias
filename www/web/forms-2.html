@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>桌球國手運動傷害評估系統｜第二頁</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+        <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="assets/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/sias_ntus.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container form-wrap">
+            <div class="loading-mask" style="display: none;"></div>
+            <form>
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <h3>四、球鞋調查問卷</h3>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>1.鞋長是否適合：</h5>
+                            </label>
+                            <div class="checkbox" id="shoes-shoe-len-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-shoe-len" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    是
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-shoe-len" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    否(小於1根食指的距離)
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-shoe-len" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    否(大於2根手指的距離)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>2.鞋子品牌：</h5>
+                            </label>
+                            <div class="checkbox" id="shoes-brand-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    Nike
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    Mizuno
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    Joola
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    Nittaku
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    STIGA
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    Butterfly(BTY)
+                                </label>
+                                <label style="font-size: 1em" class="form-group form-inline">
+                                    <input name="shoes-brand" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    其他
+                                    <input type="text" class="form-control form-control-sm" id="shoes-brand-other" placeholder="請填入品牌名稱" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>3.鞋子是否具柔軟度：</h5>
+                            </label>
+                            <div class="checkbox" id="shoes-flexibility-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-flexibility" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    是
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-flexibility" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    否
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>4.鞋跟有無氣墊：</h5>
+                            </label>
+                            <div class="checkbox" id="shoes-air-cushion-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-air-cushion" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    有
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-air-cushion" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    沒有
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>5.鞋跟是否有突起的襯舌：</h5>
+                            </label>
+                            <div class="checkbox" id="shoes-lining-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-lining" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    有
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-lining" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    沒有
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>6.鞋內是否有足弓墊：</h5>
+                            </label>
+                            <div class="checkbox" id="shoes-arch-pad-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-arch-pad" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    有
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-arch-pad" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    沒有
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label><h5>7.鞋底設計：</h5></label>
+                            <div class="checkbox" id="shoes-bottom-design-check">
+                                <label style="font-size: 1em">
+                                    <input name="shoes-bottom-design" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    平面
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-bottom-design" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    凹凸條紋
+                                </label>
+                                <label style="font-size: 1em">
+                                    <input name="shoes-bottom-design" type="checkbox" />
+                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                    有突起物
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>8.每日訓練時間約：(若非每天訓練，以一週訓練時數做平均)</h5>
+                            </label>
+                            <div class="input-group w-50">
+                                <input type="text" class="form-control" id="shoes-training-duration" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">小時</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>9.平均一天穿戴此雙鞋子的時間約：</h5>
+                            </label>
+                            <div class="input-group w-50">
+                                <input type="text" class="form-control" id="shoes-aver-wear" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">小時</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>10.平均球鞋汰換時間：</h5>
+                            </label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="shoes-aver-replace-year" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">年</span>
+                                </div>
+                                <input type="text" class="form-control" id="shoes-aver-replace-month" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">月</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label>
+                                <h5>11.鞋子尺寸：</h5>
+                            </label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="shoes-shoe-size" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">公分</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3 ">
+                            <label><h5>12-1.鞋底磨損的部位（右鞋底）：</h5></label>
+                            <div class="form-row align-items-center">
+                                <div class="col-md-4 mb-3">
+                                    <div class="checkbox shoes-worn-check">
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-right" type="checkbox" id="shoes-worn-4-r" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （右前1/3外側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-right" type="checkbox" id="shoes-worn-5-r" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （右中2/3外側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-right" type="checkbox" id="shoes-worn-6-r" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （右後1/3外側）
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <img src="assets/img/right_foot_bottom.png" class="mx-auto d-block foot-img" alt="Right foot bottom" />
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="checkbox shoes-worn-check">
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-right" type="checkbox" id="shoes-worn-1-r" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （右前1/3內側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-right" type="checkbox" id="shoes-worn-2-r" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （右中2/3內側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-right" type="checkbox" id="shoes-worn-3-r" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （右後1/3內側）
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label><h5>12-2.鞋底磨損的部位（左鞋底）：</h5></label>
+                            <div class="form-row align-items-center">
+                                <div class="col-md-4 mb-3">
+                                    <div class="checkbox shoes-worn-check">
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-left" type="checkbox" id="shoes-worn-1-l" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （左前1/3內側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-left" type="checkbox" id="shoes-worn-2-l" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （左中2/3內側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-left" type="checkbox" id="shoes-worn-3-l" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （左後1/3內側）
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <img src="assets/img/left_foot_bottom.png" class="mx-auto d-block foot-img" alt="Left foot bottom" />
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="checkbox shoes-worn-check">
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-left" type="checkbox" id="shoes-worn-4-l" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （左前1/3外側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-left" type="checkbox" id="shoes-worn-5-l" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （左中2/3外側）
+                                        </label>
+                                        <label style="font-size: 1em">
+                                            <input name="shoes-worn-left" type="checkbox" id="shoes-worn-6-l" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            鞋底磨損的部位 （左後1/3外側）
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label>
+                                <h5>13.紀錄公分：</h5>
+                            </label>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label>足長：</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Ｒ</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="shoes-foot-length-r" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">公分</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Ｌ</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="shoes-foot-length-l" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">公分</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label>足寬：</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Ｒ</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="shoes-foot-width-r" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">公分</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Ｌ</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="shoes-foot-width-l" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">公分</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label>足弓高度：</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Ｒ</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="shoes-arch-height-r" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">公分</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Ｌ</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="shoes-arch-height-l" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">公分</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="normal-hr-1" />
+                </div>
+
+                <div class="pagination-wrap">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link prev" href="#">上一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link next" href="#">下一頁</a>
+                        </li>
+                        <li class="page-item">
+                            <button type="button" class="btn btn-warning">儲存本頁</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer class="main-footer text-center">
+            <strong>Copyright &copy; 2019 <a href="https://www.ntupes.edu.tw/cht/index.php">國立臺灣體育運動大學</a>. </strong>All rights reserved.
+        </footer>
+    </body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="assets/js/sias_ntus.default.js?v=102701"></script>
+    <script src="assets/js/sias_ntus.forms.2.js?v=102701"></script>
+</html>
