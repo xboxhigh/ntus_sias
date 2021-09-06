@@ -1,0 +1,22 @@
+# .gitignore_global
+
+# OS or Editor Folders
+/data
+.cache
+**/.DS_Store
+**/.DS_Store?
+**/*~
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Numerous always-ignore extensions
+*.err
+*.log
