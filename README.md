@@ -66,7 +66,7 @@ http://{hostname}:8100/api/web/v1/{resource}/{action}
 http://{hostname}:8100/web
 ```
 
-7. 預設 phpmyadmin  頁面為
+7. 預設 phpmyadmin 頁面為
 
 ```sh
 http://{hostname}:8102
