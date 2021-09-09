@@ -72,6 +72,9 @@ http://{hostname}:8100/web
 http://{hostname}:8102
 ```
 
+8. API Spec.
+連結：https://bit.ly/38RLHYf 
+
 ---
 
 # 三、預設存取帳號等資訊
@@ -81,3 +84,4 @@ http://{hostname}:8102
 | 服務名稱               | 帳號                 | 密碼              |
 | phpmyadmin、mysql      | sias_ntus            | sias_ntus20191101 |
 | 問卷網頁 administrator | siasNtusAdmin_hidden |                   |
+
